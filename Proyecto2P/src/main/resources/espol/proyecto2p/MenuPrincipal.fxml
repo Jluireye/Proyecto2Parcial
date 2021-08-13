@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #162C80;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #162C80;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.proyecto2p.MenuPrincipalController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="26.0" text="Juego de Cartas" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
          <font>
@@ -45,7 +44,7 @@
                         <Font size="13.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #5E7CEC;" text="Reporte de Partidas">
+                  <Button fx:id="buttonReportes" mnemonicParsing="false" onAction="#switchToReportes" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #5E7CEC;" text="Reporte de Partidas">
                      <font>
                         <Font size="13.0" />
                      </font>
