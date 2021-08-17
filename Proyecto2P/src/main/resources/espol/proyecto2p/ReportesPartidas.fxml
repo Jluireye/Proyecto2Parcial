@@ -17,7 +17,7 @@
    <center>
       <TableView prefHeight="200.0" prefWidth="783.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="52.0" text="Fecha" />
+          <TableColumn fx:id="fecha" prefWidth="52.0" text="Fecha" />
           <TableColumn prefWidth="133.0" text="Nombre" />
             <TableColumn prefWidth="40.0" text="Puntos" />
             <TableColumn prefWidth="75.0" text="Pts Oponente" />
@@ -35,6 +35,9 @@
          <font>
             <Font name="Lucida Bright Demibold" size="20.0" />
          </font>
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="15.0" />
+         </BorderPane.margin>
       </Text>
    </top>
    <right>
@@ -45,14 +48,19 @@
                   <Font name="Lucida Bright Demibold" size="11.0" />
                </font>
             </Text>
-            <ComboBox prefWidth="150.0">
+            <ComboBox fx:id="cmbFilter" prefWidth="150.0">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <VBox.margin>
-                  <Insets bottom="30.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
                </VBox.margin>
             </ComboBox>
+            <Button mnemonicParsing="false" text="Filtrar">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Button>
             <Button mnemonicParsing="false" onAction="#switchToMenu" text="Regresar al Menu" />
          </children>
       </VBox>
