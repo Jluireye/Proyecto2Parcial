@@ -5,6 +5,7 @@ public class Jugador {
     ArrayList<Carta> cartasJugador;
     int puntos;
     int pilasRobadas;
+    int hola;
     
     
     //constructor Jugador Real
