@@ -20,10 +20,17 @@ public class MenuPrincipalController {
 
     @FXML
     private Button buttonReportes;
+    @FXML
+    private Button buttonAjustes;
 
     @FXML
     void switchToReportes(ActionEvent event) throws IOException{
         App.switchScenes(event, "ReportesPartidas", 900, 500);
+    }
+    
+    @FXML
+    void switchToAjustes(ActionEvent event) throws IOException{
+        App.switchScenes(event, "Ajustes", 500,500);
     }
     
 

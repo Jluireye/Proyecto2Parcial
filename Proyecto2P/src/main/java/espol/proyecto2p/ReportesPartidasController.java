@@ -13,10 +13,10 @@ public class ReportesPartidasController {
     @FXML
     private ComboBox<String> cmbFilter;
 
-    @FXML
-    void switchToMenu(ActionEvent event) throws IOException{
-        App.setRoot("MenuPrincipal");
-    }
+   //@FXML
+     //void switchToMenu(ActionEvent event) throws IOException{
+       // App.switchScenes(event, "MenuPrincipal", 640, 525);
+    //}
     
     @FXML
     private void initialize(){
@@ -25,5 +25,7 @@ public class ReportesPartidasController {
         cmbFilter.setValue(opciones.get(0));     
         System.out.println("Combobox inicializado");
     }
+    
+    
 
 }

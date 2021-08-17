@@ -25,7 +25,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         stage.setTitle("Steal the Pile");
-        scene = new Scene(loadFXML("MenuPrincipal"), 640, 525);
+        scene = new Scene(loadFXML("MenuPrincipal"));
         stage.setScene(scene);
         //stage.initStyle(StageStyle.UNDECORATED);
         stage.setResizable(false);

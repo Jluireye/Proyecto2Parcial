@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../css/Menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.proyecto2p.MenuPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../../css/Menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.proyecto2p.MenuPrincipalController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="26.0" text="Juego de Cartas" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
          <font>
@@ -39,7 +39,7 @@
                         <Font name="Aparajita" size="16.0" />
                      </font>
                   </Button>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #8426E4;" text="Ajustes" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="buttonAjustes" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToAjustes" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #8426E4;" text="Ajustes" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Aparajita" size="16.0" />
                      </font>
@@ -53,7 +53,7 @@
             </VBox>
             <BorderPane prefHeight="200.0" prefWidth="200.0">
                <right>
-                  <ImageView fitHeight="150.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" scaleX="-2.0" scaleY="2.0" BorderPane.alignment="CENTER">
+                  <ImageView fitHeight="150.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" scaleX="-2.0" scaleY="2.0" BorderPane.alignment="CENTER">
                      <image>
                         <Image url="@../../images/CartasFall.png" />
                      </image>
